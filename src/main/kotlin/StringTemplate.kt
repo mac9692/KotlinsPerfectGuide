@@ -7,7 +7,7 @@ fun main() {
     val message = """
         박진성
         한줄 띄고
-        두줄 띄고 ${Date()  }
+        두줄 띄고 ${Date()}
     """.trimIndent()
     println(message)
 
