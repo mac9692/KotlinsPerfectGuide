@@ -1,3 +1,5 @@
+import clazz.Application
+import clazz.ClassByFactory
 import clazz.Person
 import clazz.PrivatePerson
 
@@ -22,4 +24,10 @@ fun main() {
 
     val privatePerson = PrivatePerson("DDDD")
     privatePerson.showName()
+
+    println(Application.name)
+    Application.exit()
+
+    val clazz = ClassByFactory.create(arrayOf("박", "진", "성")) ?: return
+    println(clazz.name)
 }
